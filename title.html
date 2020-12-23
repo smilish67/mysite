@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>GOWY-Game Ost With You</title>
+    <style type="text/css">
+        @import url('css/title.css');
+        @font-face {
+            font-family: mybit;
+            src: url("font/neodgm.ttf");
+        }
+    </style>
+    <script type="text/javascript">
+        function logout() {
+            if (confirm("로그아웃 하시겠습니까?") == true) {
+                    location.href='index.html';
+            } else {
+                return;
+            }
+        }
+        function drawImage() {
+            var sel = document.getElementById("game");
+            var img = document.getElementById("gameimg");
+            var ifr = document.getElementById("rdr2");
+            img.src = sel.options[sel.selectedIndex].value;
+            ifr.src = sel.options[sel.selectedIndex].dataset.src;
+        }
+        function churl(url) {
+            var ifr = document.getElementById('stor');
+            ifr.src = url;
+        }
+    </script>
+</head>
+<body onload="drawImage()">
+    <div id="wrap">
+            <div id="userinterface"><img src="main/userinterface.png" width="300" height="220" />반갑습니다. userID님</div>
+                <div class="menuA">
+                <table border="0" style="margin:auto;">
+                    <tr><td><input type="radio" class="toggle" name="menuA" id="toggle" /><label for="toggle" class="Abutt" id="Abutt1"><span>게임 OST 듣기</span></label>
+                        <div id="menuB">
+                        <img id="gameimg" src="media/game/nogame.png"/><select id="game" onchange="drawImage()" name="game">
+                            <option value="media/game/nogame.png" data-src="OST/clear.html" selected>게임을 선택해주세요.</option>
+                            <option value="media/game/rdr2.png "data-src="OST/rdr.html" >RED DEAD REDEMPTION2</option>
+                            <option value="media/game/wit3.png" data-src="OST/wit3.html">The Witcher 3</option>
+                            <option value="media/game/lol.png" data-src="OST/lol.html">League Of Legends</option>
+                            <option value="media/game/skyrim.png" data-src="OST/skyrim.html">Elder scroll 5: skyrim</option>
+                            <option value="media/game/lou.png" data-src="OST/lou.html">The LAST OF US</option>
+                            <option value="media/game/cyb.png" data-src="OST/cyb.html">CYBERPUNK 2077</option>
+                            <option value="media/game/nogame.png" data-src="OST/wit3.html">추가예정</option>
+                             </select>
+                            <iframe src="" id="rdr2" scrolling="no"></iframe>
+                            </div></td></tr>
+                    <tr><td><input type="radio" class="toggle" name="menuA" id="toggle2" /><label for="toggle2" class="Abutt" id="Abutt2"><span>게임스토리</span></label>
+                        <div id="story">
+                            <input type="radio" onclick="churl('story/rdr2.html')" name="game" class="atoggle" id="atoggle1" /><label for="atoggle1" class="butt"><img src="media/game/rdr2.png" /><span>RDR2</span></label><br />
+                            <input type="radio" onclick="churl('story/skyrim.html')" name="game" class="atoggle" id="atoggle2" /><label for="atoggle2" class="butt"><img src="media/game/skyrim.png" /><span>SKYRIM</span></label><br/>
+                            <input type="radio" onclick="churl('story/lol.html')"name="game" class="atoggle" id="atoggle3" /><label for="atoggle3" class="butt"><img src="media/game/lol.png" /><span>LOL</span></label><br />
+                            <input type="radio" onclick="churl('story/cyb.html')"name="game" class="atoggle" id="atoggle4" /><label for="atoggle4" class="butt"><img src="media/game/cyb.png" /><span>CYB</span></label><br />
+                            <input type="radio" onclick="churl('story/wit3.html')"name="game" class="atoggle" id="atoggle5" /><label for="atoggle5" class="butt"><img src="media/game/wit3.png" /><span>WIT3</span></label><br />
+                            <input type="radio" onclick="churl('story/lou.html')"name="game" class="atoggle" id="atoggle6" /><label for="atoggle6" class="butt"><img src="media/game/lou.png" /><span>LoU</span></label><br />
+                        </div>
+                        <iframe src="" id="stor" scrolling="no"></iframe>
+                        </td></tr>
+                    <tr><td><input type="radio" class="toggle" name="menuA" id="toggle3" /><label for="toggle3" class="Abutt" id="Abutt3"><span>게임뉴스</span></label></td></tr>
+                    <tr><td><input type="radio" class="toggle" name="menuA" id="toggle4" /><label for="toggle4" class="Abutt" id="Abutt4"><span>웹제작자</span></label></td></tr>
+                    <tr><td><input class="Abutt" type="button" value="로그아웃" onclick="logout()" /></td></tr></table>
+                 </div>
+     </div>
+</body>
+</html>

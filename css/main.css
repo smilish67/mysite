@@ -1,0 +1,75 @@
+body{
+            background-color:black;
+        }
+        #wrap {
+            margin:5% 7%;
+            width: 1600px;
+            height: 700px;
+            border: dashed 10px white;
+	scroll:none;
+        }
+        #Logoside{
+            margin:5px;
+            float:left;
+        }
+        #Login{
+            margin: 5%;
+            margin-left:5%;
+            float:left;
+            width: 800px;
+            height:550px;
+            border:dashed 10px white;
+        }
+        form{
+            text-align:center;
+            font-size:40px;
+            font-family:mybit;
+            color:white;
+        }
+        form > table{
+            text-align:left;
+            margin-left:15%;
+        }
+        input[type="text"]{
+            color:white;
+            background-color:black;
+            border:5px solid white;
+            height:30px;
+            font-size:30px;
+            font-family:mybit;
+        }
+        input[type="password"] {
+            color: white;
+            background-color: black;
+            border: 5px solid white;
+            height: 30px;
+            font-size: 30px;
+            font-family: mybit;
+        }
+        #go {
+            color: black;
+            background-color: white;
+            border: 5px solid white;
+            font-family: mybit;
+            font-size: 40px;
+            width: 100px;
+            height: 88px;
+        }
+            #go:hover {
+                background-color: gray;
+                cursor: pointer;
+            }
+        input[type=button]:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+        input[type=button] {
+            color: black;
+            background-color: white;
+            border: 5px solid white;
+            font-family: mybit;
+            font-size: 30px;
+            width: 150px;
+            height: 78px;
+ 
+        }

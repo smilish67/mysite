@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>GOWY-Game Ost lolh You</title>
+    <style type="text/css">
+        @import url('../css/ost.css');
+        @font-face {
+            font-family: mybit;
+            src: url("../font/neodgm.ttf");
+        }
+    </style>
+    <script type="text/javascript">
+        function churl(url) {
+            var ifr = document.getElementById('ost');
+            ifr.src = url;
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="menuB">
+            <div class="menuA">
+                <input type="radio" onclick="churl('minfo/noinfo.html')" class="toggle" name="menuA" checked id="toggle" /><label for="toggle">--------PLAYLIST---------</label><br />
+                <input type="radio" onclick="churl('minfo/noinfo.html')" class="toggle" name="menuA" checked id="toggle" /><label for="toggle"></label><br />
+                <input type="radio" onclick="churl('minfo/lol/call.html')" class="toggle" name="menuA" id="toggle1" /><label for="toggle1">SUMMONER'S CALL</label><br />
+                <input type="radio" onclick="churl('minfo/lol/warriors.html')" class="toggle" name="menuA" id="toggle2" /><label for="toggle2">WARRIORS</label><br />
+                <input type="radio" onclick="churl('minfo/lol/kda1.html')" class="toggle" name="menuA" id="toggle3" /><label for="toggle3">K/DA-POP STAR</label><br />
+                <input type="radio" onclick="churl('minfo/lol/kindred.html')" class="toggle" name="menuA" id="toggle9" /><label for="toggle9">KINDRED's THEME</label><br />
+                <input type="radio" onclick="churl('minfo/lol/jhin.html')" class="toggle" name="menuA" id="toggle4" /><label for="toggle4">JHIN's THEME</label><br />
+                <input type="radio" onclick="churl('minfo/lol/ekko.html')" class="toggle" name="menuA" id="toggle5" /><label for="toggle5">EKKO's THEME</label><br />
+                <input type="radio" onclick="churl('minfo/lol/swain.html')" class="toggle" name="menuA" id="toggle6" /><label for="toggle6">SWAIN's THEME</label><br />
+                <input type="radio" onclick="churl('minfo/lol/pjhunt.html')" class="toggle" name="menuA" id="toggle7" /><label for="toggle7">PROJECT: HUNTER</label><br />
+                <input type="radio" onclick="churl('minfo/lol/ornn.html')" class="toggle" name="menuA" id="toggle8" /><label for="toggle8">ORNN's THEME</label><br />
+                <input type="radio" onclick="churl('minfo/lol/starg1.html')" class="toggle" name="menuA" id="toggle10" /><label for="toggle10">STAR GUARIDAN 1</label><br />
+                <input type="radio" onclick="churl('minfo/lol/starg2.html')" class="toggle" name="menuA" id="toggle11" /><label for="toggle11">STAR GUARIDAN 2</label><br />
+            </div>
+        </div>
+        <iframe src="" scrolling="no" id="ost"></iframe>
+    </div>
+</body>
+</html>

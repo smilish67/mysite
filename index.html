@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>GOWY-Game Ost With You</title>
+    <style type="text/css">
+        @import url('css/main.css');
+        @font-face{
+            font-family:mybit;
+            src:url("font/neodgm.ttf");
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="Logoside"><img src="main/LOGO.png" height="650" width="600" /></div>
+        <div id="Login">
+        <form name="login" method="post"><br /><br />로 그 인<br /><br /><br /><br /> 
+            <table border="0">
+            <tr><td>User ID </td><td><input type="text" name="ID" size="15" value="" /></td><td rowspan="2"><input id="go" type="button" onclick="location.href='title.html'" value="GO" /></td></tr>
+            <tr><td>PASSWORD &nbsp; </td><td><input type="password" name="PW" size="15" value="" /></td>
+            </table><br />
+            <input type="button" onClick="window.open('signup.html','로그인','width=500,height=700')" value="회원가입"/>
+            </form></div>
+    </div>
+</body>
+</html>

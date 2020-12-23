@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>GOWY-Game Ost With You</title>
+    <style type="text/css">
+        @import url('../css/ost.css');
+        @font-face {
+            font-family: mybit;
+            src: url("../font/neodgm.ttf");
+        }
+    </style>
+    <script type="text/javascript">
+        function churl(url) {
+            var ifr = document.getElementById('ost');
+            ifr.src = url;
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="menuB">
+            <div class="menuA">
+                <input type="radio" onclick="churl('minfo/noinfo.html')" class="toggle" name="menuA" checked id="toggle" /><label for="toggle">--------PLAYLIST---------</label><br />
+                <input type="radio" onclick="churl('minfo/noinfo.html')" class="toggle" name="menuA" checked id="toggle" /><label for="toggle"></label><br />
+	     <input type="radio" onclick="churl('minfo/wit/silver.html')" class="toggle" name="menuA" id="toggle1" /><label for="toggle1">SILVER FOR MONSTER</label><br />
+                <input type="radio" onclick="churl('minfo/wit/steel.html')" class="toggle" name="menuA" id="toggle2" /><label for="toggle2">STEEL FOR HUMAN</label><br />
+                <input type="radio" onclick="churl('minfo/wit/sword.html')" class="toggle" name="menuA" id="toggle3" /><label for="toggle3">THE SONG OF SWORD DANCER</label><br />
+            </div>
+        </div>
+        <iframe src="" scrolling="no" id="ost"></iframe>
+    </div>
+</body>
+</html>

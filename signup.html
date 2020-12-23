@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <style type="text/css">
+        @font-face{
+            font-family:mybit;
+            src:url("font/neodgm.ttf");
+        }
+        body{
+            background-color:black;
+        }
+        #wrap {
+            margin:0;
+            width: 460px;
+            height: 650px;
+            border: dashed 10px white;
+            text-align:center;
+            font-size:50px;
+            font-family:mybit;
+            color:white;
+        }
+        form {
+            text-align: center;
+            font-size: 30px;
+            font-family: mybit;
+            color: white;
+        }
+
+            form > table {
+                text-align: left;
+                margin-left: 15%;
+            }
+
+        input[type="text"] {
+            color: white;
+            background-color: black;
+            border:0;
+            border-bottom: 5px solid white;
+            height: 35px;
+            font-size: 20px;
+            font-family: mybit;
+        }
+        input[type="submit"] {
+            color: white;
+            background-color: black;
+            border: 5px solid white;
+            font-family: mybit;
+            font-size: 40px;
+            width: 100px;
+            height: 58px;
+        }
+            input[type="submit"]:hover{
+                background-color:gray;
+                cursor:pointer;
+            }
+            input[type="radio"] {
+                color: white;
+                background-color: black;
+                border-bottom: 5px solid white;
+                font-family: mybit;
+                font-size: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <br />회원가입<br /><br /><br />
+            <form name="signup" method="post" action="login/member.php">
+                <table>
+                    <tr><td>이름 &nbsp;</td><td><input type="text" size="10" name="username" placeholder="홍길동" required /></td></tr>
+                    <tr><td>생일 <td><input type="text" size="10" name="age" placeholder="990709" required /></td></tr>
+                    <tr><td>성별 <td><label style="font-size:15px;"><input type="radio" name="sex" value="남자" required/>남자</label><label style="font-size:15px;"><input type="radio" name="sex" value="여자" />여자</label></td></tr>
+                    <tr><td>이메일 <td><input type="text" size="20" name="email" placeholder="exp@exp.com" required/></td></tr>
+                    <tr><td>게임 <td><input type="text" size="15" name="favorit" placeholder="좋아하는 게임" /></td></tr>
+                </table><br />
+                <p style="font-size:15px;">좋아하는 게임을 제외하고는 필수로 입력해주세요!</p>
+                <input type="submit" value="가입" />
+            </form>
+    </div>
+</body>
+</html>
