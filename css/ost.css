@@ -1,0 +1,47 @@
+       body {
+            background-color: black;
+        }
+
+        #wrap {
+            margin-top:13px;
+            width: 1240px;
+            height: 680px;
+        }
+
+        #menuB{
+            margin-top:212px;
+            border:solid 5px white;
+            color:gray;
+            background-color:black;
+            font-size:30px;
+            font-family:mybit;
+            width:400px;
+            height:450px;
+            text-align:left;
+            overflow-y:scroll;
+            overflow-x:hidden;
+            z-index:2;
+            padding-left:10px;
+        }
+        .toggle{
+            display:none;
+        }
+        #menuB::-webkit-scrollbar{
+            background-color:black;
+        }
+        #menuB::-webkit-scrollbar-thumb{
+            background-color:gray;
+        }
+        label:hover{
+            background-color:white;
+        }
+        iframe{
+            border:0;
+            width:800px;
+            height:700px;
+            transform:translate(430px,-660px);
+        }
+        .toggle:checked + label{
+            background-color:white;
+            color:black;
+        }
